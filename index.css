@@ -6,9 +6,9 @@
 }
 
 /* Background utilities */
-.bg-primary { background-color: var(--primary); }
-.bg-secondary { background-color: var(--secondary); }
-.bg-light { background-color: var(--light); }
+.bg-primary-p { background-color: var(--primary); }
+.bg-secondary-p { background-color: var(--secondary); }
+.bg-light-p { background-color: var(--light); }
 
 /* Text utilities */
 .text-primary { color: var(--primary); }
