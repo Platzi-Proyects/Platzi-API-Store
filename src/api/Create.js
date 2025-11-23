@@ -26,3 +26,7 @@ async function createCategory(categoryData) {
     return await response.json();
 }
 
+let data = {
+    "name": "New Category",
+    "image": "https://placeimg.com/640/480/any"
+}
