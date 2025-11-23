@@ -1,0 +1,40 @@
+async function getProducts() {
+
+    try {
+        const api = await fetch("https://api.escuelajs.co/api/v1/products");
+        const db = await api.json();
+        console.log(db);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function getProductsById(id) {
+    try {
+        const api = await fetch(`https://api.escuelajs.co/api/v1/products/${id}`);
+        const db = await api.json();
+        console.log(db);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function getCategory() {
+    try {
+        const api = await fetch("https://api.escuelajs.co/api/v1/categories");
+        const db = await api.json();
+        console.log(db);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function getCategoryById(id) {
+    try {
+        const api = await fetch(`https://api.escuelajs.co/api/v1/categories/${id}`);
+        const db = await api.json();
+        console.log(db);
+    } catch (error) {
+        console.log(error);
+    }
+}
