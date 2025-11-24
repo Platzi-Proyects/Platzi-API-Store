@@ -6,19 +6,21 @@ const gridItems = document.querySelector(".products");
 getCategory().then((categories) => {
     for (const category of categories) {
         const html = `
-            
-            <div class="row py-2 my-4 bg-fourth-p rounded-5">
-                <div class="col-md-4">
-                    <img src=${category.image} alt=${category.slut} height="100" width="100" class="rounded-4">
+            <div class="row py-2 my-4 bg-fourth-p rounded-5 align-items-center">
+                <div class="col-5 col-md-4 d-flex justify-content-center">
+                    <img src="${category.image}" alt="${category.slut}" 
+                         height="100" width="100" class="rounded-4">
                 </div>
-                <div class="col-md-8">
-                    <h2 class="text-light">${category.name}</h2>
+
+                <div class="col-5 col-md-4 d-flex align-items-center">
+                    <h2 class="text-light m-0">${category.name}</h2>
                 </div>
             </div>
-`
+        `;
         gridContainer.innerHTML += html;
     }
 });
+
 
 getProducts().then(products => {
     for (const product of products) {
