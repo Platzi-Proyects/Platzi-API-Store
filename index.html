@@ -1,29 +1,48 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Platzi api store</title>
-        <link rel="stylesheet" href="/index.css">
-    </head>
-    <body>
-        <main class="bg-secondary-p p-2 min-vh-100 d-flex align-items-center justify-content-center">
-            <div class="row w-100">
-                <div class="col-12 col-md-6 p-3 ">
-                    <h1>Platzi store API is construction</h1>
-                    <p>Platzi API Store is a project that uses the Platzi API <a href="https://fakeapi.platzi.com/" target="_blank">(https://fakeapi.platzi.com/)</a> to create a web store using vanilla JavaScript, HTML, and Bootstrap. The focus of this project is to build a website with proper HTTP protocols, async functions, and an OOP structure in JavaScript.</p>
-                    <a href="https://github.com/Platzi-Proyects/Platzi-API-Store" target="_blank">
-                        <img src="src/assets/logos/github.png" alt="GitHub log" height="70">
-                    </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Platzi app</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+<main class="bg-primary-p p-5">
+    <div class="bg-secondary-p rounded-5">
+        <div class="row">
+            <div class="col-12 col-md-2 p-3 d-flex justify-content-center align-items-center">
+                <img alt="Platzi logo" src="/src/assets/logos/black-logo.png" height="150">
+            </div>
+            <div class="col-12 col-md-10 p-3 d-flex justify-content-center align-items-center">
+                <h1>The fake store of platzi</h1>
+            </div>
+
+        </div>
+    </div>
+    <div class="mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6  d-flex flex-column align-items-center">
+                <img alt="Platzi logo" src="/src/assets/logos/plat.png" height="150">
+                <h2 class="text-light">Platzi API Store</h2>
+                <p class="text-thirdsary">is a project that uses the Platzi API <a href="https://fakeapi.platzi.com/" target="_blank">(https://fakeapi.platzi.com/)</a> to create a web store using vanilla JavaScript, HTML, and Bootstrap. The focus of this project is to build a website with proper HTTP protocols, async functions, and an OOP structure in JavaScript.</p>
+            </div>
+            <div class="col-12 col-md-6 ">
+                <h2 class="d-flex align-items-center justify-content-center text-light">Category</h2>
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="category"></div>
                 </div>
 
-                <div class="col-12 col-md-6 p-3 d-flex justify-content-center align-items-center">
-                    <img alt="Platzi logo" src="src/assets/logos/black-logo.png">
-                </div>
             </div>
-        </main>
-        <!-- Bootstrap js -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    </body>
+
+        </div>
+        <h2 class="text-light px-md-5 px-4 mx-md-5 mt-5">Products</h2>
+        <div class="mt-5 justify-content-center products row">
+        </div>
+    </div>
+</main>
+<script src="src/views/pages/index/index.js" type="module"></script>
+<!-- Bootstrap js -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>
