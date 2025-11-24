@@ -1,4 +1,4 @@
-async function getProducts() {
+export async function getProducts() {
 
     try {
         const api = await fetch("https://api.escuelajs.co/api/v1/products");
@@ -9,7 +9,7 @@ async function getProducts() {
     }
 }
 
-async function getProductsById(id) {
+export async function getProductsById(id) {
     try {
         const api = await fetch(`https://api.escuelajs.co/api/v1/products/${id}`);
         const db = await api.json();
@@ -19,17 +19,17 @@ async function getProductsById(id) {
     }
 }
 
-async function getCategory() {
+export async function getCategory() {
     try {
         const api = await fetch("https://api.escuelajs.co/api/v1/categories");
         const db = await api.json();
-        console.log(db);
+        return db;
     } catch (error) {
         console.log(error);
     }
 }
 
-async function getCategoryById(id) {
+export async function getCategoryById(id) {
     try {
         const api = await fetch(`https://api.escuelajs.co/api/v1/categories/${id}`);
         const db = await api.json();
