@@ -1,4 +1,4 @@
-import {getProducts, getProductsById, getCategoryById, getCategory} from "/src/api/Get.js";
+import {getProducts, getCategory} from "/src/api/Get.js";
 
 const gridContainer = document.querySelector(".category");
 const gridItems = document.querySelector(".products");
