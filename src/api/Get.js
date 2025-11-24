@@ -1,6 +1,6 @@
 export async function getProducts() {
     try {
-        const api = await fetch("https://api.escuelajs.co/api/v1/products?offset=0&limit=5");
+        const api = await fetch("https://api.escuelajs.co/api/v1/products?offset=0&limit=4");
         const db = await api.json();
         return db;
     } catch (error) {
@@ -20,7 +20,7 @@ export async function getProductsById(id) {
 
 export async function getCategory() {
     try {
-        const api = await fetch("https://api.escuelajs.co/api/v1/categories");
+        const api = await fetch("https://api.escuelajs.co/api/v1/categories?offset=0&limit=5");
         const db = await api.json();
         return db;
     } catch (error) {
