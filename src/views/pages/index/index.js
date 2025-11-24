@@ -1,6 +1,7 @@
 import {getProducts, getProductsById, getCategoryById, getCategory} from "/src/api/Get.js";
 
 const gridContainer = document.querySelector(".category");
+const gridItems = document.querySelector(".products");
 
 getCategory().then((categories) => {
     for (const category of categories) {
@@ -19,3 +20,9 @@ getCategory().then((categories) => {
     }
 });
 
+getProducts().then(products => {
+    for (const product of products) {
+        const html = `<h1 class="text-white">${product.title}</h1>`
+        gridItems.innerHTML += html;
+    }
+});

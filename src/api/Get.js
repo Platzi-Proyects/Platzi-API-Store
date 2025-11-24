@@ -1,9 +1,8 @@
 export async function getProducts() {
-
     try {
-        const api = await fetch("https://api.escuelajs.co/api/v1/products");
+        const api = await fetch("https://api.escuelajs.co/api/v1/products?offset=0&limit=5");
         const db = await api.json();
-        console.log(db);
+        return db;
     } catch (error) {
         console.log(error);
     }
