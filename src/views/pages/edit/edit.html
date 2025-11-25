@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <main class="p-5 bg-primary-p">
+        <nav-bar></nav-bar>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <form class="form text-white">
+                    <div class="mb-3">
+                        <label for="inputText" class="form-label">nombre</label>
+                        <input type="text" class="form-control" id="inputText" aria-describedby="emailHelp">
+                        <p>Seleciona el id que vas a borar</p>
+                        <label for="id" class="form-label">ID de categoria</label>
+                        <input type="number" class="form-control" id="id" aria-describedby="emailHelp">
+                        <label for="desc" class="form-label">Descrpcion</label>
+                        <input type="text" class="form-control" id="desc" aria-describedby="emailHelp">
+                        <label for="img" class="form-label">img</label>
+                        <input type="text" class="form-control" id="img" aria-describedby="emailHelp">
+                        <label for="price" class="form-label">price</label>
+                        <input type="number" class="form-control" id="price" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Confirmo</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Actulizar</button>
+                </form>
+            </div>
+            <div class="get row col-md-9 col-12"></div>
+        </div>
+    </main>
+    <script src="edit.js" type="module"></script>
+    <script src="/src/views/layouts/NavBar.js" type="module"></script>
+    <!-- Bootstrap js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
