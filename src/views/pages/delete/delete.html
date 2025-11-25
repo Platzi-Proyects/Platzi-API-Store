@@ -10,8 +10,21 @@
     <main class="p-5 bg-primary-p">
         <nav-bar></nav-bar>
         <div class="row">
-            <div class="get row col-9"></div>
-            <div class="col-3"></div>
+            <div class="col-12 col-md-3">
+                <form class="form text-white">
+                    <div class="mb-3">
+                        <label for="inputText" class="form-label">Borrar por ID</label>
+                        <input type="number" class="form-control" id="inputText" aria-describedby="emailHelp">
+                        <p>Seleciona el id que vas a borar</p>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Confirmo</label>
+                    </div>
+                    <button type="submit" class="btn btn-danger">BORRAR</button>
+                </form>
+            </div>
+            <div class="get row col-md-9 col-12"></div>
         </div>
     </main>
     <script src="delete.js" type="module"></script>

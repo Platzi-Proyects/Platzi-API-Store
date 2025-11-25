@@ -8,6 +8,7 @@ export async function deleteProduct(id) {
     return await response.json();
 }
 
+
 async function deleteCategory(id) {
     const url = `https://api.escuelajs.co/api/v1/categories/${id}`;
 
