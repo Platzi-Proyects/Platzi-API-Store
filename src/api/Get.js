@@ -8,6 +8,16 @@ export async function getProducts() {
     }
 }
 
+export async function getProductsAll() {
+    try {
+        const api = await fetch("https://api.escuelajs.co/api/v1/products");
+        const db = await api.json();
+        return db;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 export async function getProductsById(id) {
     try {
         const api = await fetch(`https://api.escuelajs.co/api/v1/products/${id}`);
