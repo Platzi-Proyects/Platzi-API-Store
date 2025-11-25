@@ -13,6 +13,9 @@ class MiElemento extends HTMLElement {
         <li class="nav-item">
           <a class="nav-link" href="/src/views/pages/delete/delete.html">Delete</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/src/views/pages/edit/edit.html">Create</a>
+        </li>
       </ul>
     </div>
   </div>
