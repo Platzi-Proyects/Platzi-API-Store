@@ -1,4 +1,4 @@
-async function createProduct(productData) {
+export async function createProduct(productData) {
     const url = "https://api.escuelajs.co/api/v1/products/";
 
     const response = await fetch(url, {
